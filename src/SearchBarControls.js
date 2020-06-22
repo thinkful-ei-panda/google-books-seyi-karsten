@@ -1,6 +1,9 @@
 import React from 'react';
 
 class SearchBarControls extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <div className="SearchBar__controls">

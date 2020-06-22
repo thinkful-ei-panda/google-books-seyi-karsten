@@ -1,12 +1,16 @@
 import React from 'react';
+import Books from './Books';
 
 class List extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
-    return (
-      <div className="booklist">
-        <p>A list of books</p>
-      </div>
-    );
+    const books = this.props.books;
+    console.log(this.props.books);
+
+    return <Books book={this.props.books} />;
   }
 }
+
 export default List;
